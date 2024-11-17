@@ -1,0 +1,43 @@
+section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 600px;
+	margin-block: 20px;
+	gap: 24px;
+
+	h1 {
+		font-size: 48px;
+		background-color: rgba(0, 32, 174, 0.5);
+		padding-inline: 8px;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	nav {
+		.tab {
+			background: none;
+			outline: none;
+			padding: 6px 8px;
+			border: 1px solid blueviolet;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.tab:hover {
+			border-color: blueviolet;
+			color: blueviolet;
+		}
+
+		.tab-active,
+		.tab-active:hover {
+			background-color: blueviolet;
+			border-color: blueviolet;
+			color: white;
+		}
+	}
+}

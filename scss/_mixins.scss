@@ -1,0 +1,20 @@
+@mixin breakpoint($point) {
+	@if $point == small {
+		@media (max-width: 600px) {
+			@content;
+		}
+	} @else if $point == medium {
+		@media (max-width: 900px) {
+			@content;
+		}
+	} @else if $point == large {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	} @else if $point == xlarge {
+		@media (min-width: 2000px) {
+			// Typically, min-width for xlarge should be slightly more than 1200px to avoid overlap
+			@content;
+		}
+	}
+}

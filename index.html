@@ -14,7 +14,7 @@
 			<h1>Tabs</h1>
 			<div class="tab-wrapper">
 				<nav class="tab-list" role="tablist">
-					<button class="tab" role="tab" aria-selected="true" tabindex="0">HTML</button>
+					<button class="tab tab-active" role="tab" aria-selected="true" tabindex="0">HTML</button>
 					<button class="tab" role="tab" aria-selected="false" tabindex="1">CSS</button>
 					<button class="tab" role="tab" aria-selected="false" tabindex="2">JavaScript</button>
 				</nav>
@@ -29,8 +29,84 @@
 
 		<!-- Dropdown Menu -->
 		<section>
-			<h1>Dropdown Menu</h1>
-			<div class="dropdown-wrapper"></div>
+			<h1>Custom Dropdown</h1>
+			<form class="dropdown-wrapper">
+				<div class="dropdown-container">
+					<label for="payment">Select Payment</label>
+					<div class="custom-dropdown">
+						<button class="dropdown-toggle">
+							<span class="wrapper">
+								<img src="./assets/icons/flashlight-line.svg" alt="" />
+								<p>Select an option</p>
+							</span>
+							<img
+								src="/assets/icons/arrow-up-s-line.svg"
+								alt="Arrow pointing upward"
+								class="arrow-up"
+							/>
+						</button>
+
+						<ul class="dropdown-menu">
+							<li data-value="Rent Payment" class="select">
+								<span>
+									<img src="./assets/icons/home-4-line.svg" alt="Building icon" class="rent-icon" />
+									<p>Rent Payment</p>
+								</span>
+							</li>
+							<li data-value="Utility Payment" class="select">
+								<span>
+									<img
+										src="./assets/icons/flashlight-line-1.svg"
+										alt="Flashlight icon"
+										class="utility-icon"
+									/>
+									<p>Utility Payment</p>
+								</span>
+							</li>
+							<li data-value="Donation" class="select">
+								<span>
+									<img
+										src="./assets/icons/hand-coin-line.svg"
+										alt="hand coin icon"
+										class="donation-icon"
+									/>
+									<p>Donation</p>
+								</span>
+							</li>
+							<li data-value="Tax Payment" class="select">
+								<span>
+									<img
+										src="./assets/icons/file-list-2-line.svg"
+										alt="File list icon"
+										class="tax-icon"
+									/>
+									<p>Tax Payment</p>
+								</span>
+							</li>
+							<li data-value="Tuition Fee" class="select">
+								<span>
+									<img
+										src="./assets/icons/building-line.svg"
+										alt="Building icon"
+										class="tuition-icon"
+									/>
+									<p>Tuition Fee</p>
+								</span>
+							</li>
+							<li data-value="Phone Bill" class="select">
+								<span>
+									<img
+										src="./assets/icons/smartphone-line.svg"
+										alt="Phone icon"
+										class="phone-icon"
+									/>
+									<p>Phone Bill</p>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</form>
 		</section>
 	</body>
 </html>

@@ -44,4 +44,64 @@ section nav .tab-active:hover {
   background-color: blueviolet;
   border-color: blueviolet;
   color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 16px;
+  background-color: #f2f2f2;
+}
+
+.dropdown-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  margin-block-start: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown-toggle .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  margin-block-start: 10px;
+  font-size: 14px;
+}
+.dropdown-menu .select {
+  padding: 8px;
+  cursor: pointer;
+}
+.dropdown-menu .select span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown-menu .select:hover {
+  background-color: #f9f9f9;
+}
+
+.visible {
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
